@@ -1,0 +1,10 @@
+# stuff to ignore
+syntax: glob
+*.suo
+*.user
+
+syntax: regexp
+_ReSharper.*
+bin
+obj
+_local
