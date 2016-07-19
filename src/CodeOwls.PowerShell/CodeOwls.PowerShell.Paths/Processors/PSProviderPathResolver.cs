@@ -30,7 +30,7 @@ using CodeOwls.PowerShell.Provider.PathNodes;
 
 namespace CodeOwls.PowerShell.Paths.Processors
 {
-    abstract class PSProviderPathResolver<T> : PathResolverBase where T : PSDriveInfo
+    public abstract class PSProviderPathResolver<T> : PathResolverBase where T : PSDriveInfo
     {
         // psprovider path element (used to identify associated path drive) is identified
         //  inside of [].  for example:

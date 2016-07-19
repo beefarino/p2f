@@ -33,6 +33,6 @@ using System.Runtime.InteropServices;
 //
 [assembly: AssemblyProduct("Code Owls LLC PowerShell Library")]
 
-[assembly: AssemblyVersion("1.6")]
-[assembly: AssemblyFileVersion("1.6")]
+[assembly: AssemblyVersion("1.6.1")]
+[assembly: AssemblyFileVersion("1.6.1")]
 
