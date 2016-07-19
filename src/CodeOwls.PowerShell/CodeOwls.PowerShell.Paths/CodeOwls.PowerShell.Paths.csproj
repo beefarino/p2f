@@ -85,6 +85,7 @@
     <Compile Include="IGetItemContent.cs" />
     <Compile Include="IMoveItem.cs" />
     <Compile Include="ISetItemContent.cs" />
+    <Compile Include="Processors\PSProviderPathResolver.cs" />
     <Compile Include="Processors\ProviderContext.cs" />
     <Compile Include="Processors\IProviderContext.cs" />
     <Compile Include="Processors\IPathResolver.cs" />
