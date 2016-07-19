@@ -35,7 +35,7 @@ namespace CodeOwls.PowerShell.Paths.Processors
         // psprovider path element (used to identify associated path drive) is identified
         //  inside of [].  for example:
         // dropbox\Dropbox::[123454321]\transcripts
-        private static readonly Regex DriveNameRegex = new Regex(@"^[^\[]*\[(.+)\]");
+        private static readonly Regex DriveIdentifierRegex = new Regex(@"^[^\[]*\[(.+)\]");
 
         private readonly IEnumerable<PSDriveInfo> _drives;
 
@@ -57,7 +57,7 @@ namespace CodeOwls.PowerShell.Paths.Processors
 
             if (_drives.Any())
             {
-                var matches = DriveNameRegex.Match(path);
+                var matches = DriveIdentifierRegex.Match(path);
                 if (matches.Success)
                 {
                     var id = matches.Captures[0].Value;
@@ -67,7 +67,7 @@ namespace CodeOwls.PowerShell.Paths.Processors
                 }
             }
 
-            path = DriveNameRegex.Replace(path, "");
+            path = DriveIdentifierRegex.Replace(path, "");
 
             var result = base.ResolvePath(providerContext, path);
 

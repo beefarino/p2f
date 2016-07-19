@@ -1,4 +1,4 @@
-using CodeOwls.PowerShell.Provider.PathNodeProcessors;
+﻿using CodeOwls.PowerShell.Provider.PathNodeProcessors;
 
 namespace CodeOwls.PowerShell.Paths
 {
